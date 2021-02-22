@@ -1,0 +1,41 @@
+.grid{
+    display: grid;
+    gap: 10px;
+    grid-template-rows: repeat(4, 100px);
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    /*minimax = 해당 크기 이하로는 안줄어듬
+    auto-fit: 해당 child의 크기를 늘려서 유지
+    */
+}
+
+.grid2{
+    display: grid;
+    gap: 10px;
+    grid-template-rows: repeat(4, 100px);
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); /*minimax = 해당 크기 이하로는 안줄어듬
+    auto-fill: 해당 child의 크기 유지 및 확장시 빈 child넣어줌
+    */
+}
+
+.grid3{
+    display:grid;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, max-content));
+    grid-auto-rows: 100px;
+    margin-bottom: 100px;
+}
+
+.header{
+    background-color:cornflowerblue;
+}
+
+.content{
+    background-color:darkkhaki;
+}
+.nav{
+    background-color:darkviolet;
+}
+
+.footer{
+    background-color:crimson;
+}

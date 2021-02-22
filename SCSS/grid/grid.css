@@ -1,0 +1,18 @@
+.grid{
+    display: grid;
+    height: 250vh;
+    gap: 10px;
+    grid-template-columns: repeat(4, 200px);
+    grid-template-rows: repeat(4, 200px);
+    grid-auto-rows: 100px; /* template-rows 이후 부터는 자동으로 맞춰줌 */
+    grid-auto-flow: column; /*flex-direction과 똑같음;*/
+}
+
+.item{
+    background-color: aqua;
+}
+
+
+.red{
+    background-color:brown;
+}
